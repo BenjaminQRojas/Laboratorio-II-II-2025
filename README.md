@@ -5,8 +5,8 @@
 ## Objetivo General
 
 Este laboratorio tiene como objetivo que el estudiante aplique técnicas avanzadas de diseño de casos de prueba, cubriendo 
-no solo tests tradicionales unitarios, sino también particiones de equivalencia, análisis de frontera, property-based 
-testing y análisis de mutaciones, además de proponer una mejora y refactor sobre el método provisto.
+no solo tests tradicionales unitarios, sino también particiones de equivalencia, análisis de frontera y property-based 
+testing, además de proponer una mejora y refactor sobre el método provisto.
 
 El objetivo final es lograr un diseño de pruebas que pueda justificar cobertura, correctitud y robustez en un proceso 
 real de testing profesional.
