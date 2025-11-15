@@ -9,7 +9,7 @@ import java.util.Arrays;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(value = Parameterized.class)
-public class ParameterizedIdentifier {
+public class ParameterizedIdentifierTest {
 
     @Parameterized.Parameters
     public static Iterable<Object> getData(){
@@ -32,7 +32,7 @@ public class ParameterizedIdentifier {
     private String string_to_verify;
     private boolean expected_result;
 
-    public ParameterizedIdentifier(String string_to_verify, boolean expected_result){
+    public ParameterizedIdentifierTest(String string_to_verify, boolean expected_result){
         this.string_to_verify = string_to_verify;
         this.expected_result = expected_result;
     }
