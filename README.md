@@ -109,7 +109,27 @@ Cuando el identificador es inválido, el método `validateIdentifier` debe indic
 ## Sección que debe agregarse en el README 
 
 > ### Tabla final de particiones de equivalencia + análisis de frontera
-> Debe mostrar la tabla que usó para diseñar los tests
+> ### Particiones de Equivalencia
+> | **Partición**                 | **Descripción**                                     | **true / false** |
+> | ----------------------------- | --------------------------------------------------- |------------------|
+> | Longitud válida               | Longitud entre **1 y 5** caracteres                 | true             |
+> | Longitud inválida (vacío)     | Longitud **0**, provoca excepción                   | false            |
+> | Longitud inválida (mayor a 5) | Longitud **≥ 6**                                    | false            |
+> | Primer carácter válido        | Primera posición contiene **una letra (A–Z o a–z)** | true             |
+> | Primer carácter inválido      | Primera posición contiene **dígito o símbolo**      | false            |
+> | Caracteres internos válidos   | Letras o dígitos en posiciones 2..N                 | true             |
+> | Caracter no permitido         | Cualquier carácter que no sea letra o dígito        | false            |
+> | Dígitos consecutivos          | Dos o más dígitos seguidos                          | true             |
+>
+> ### Análisis de frontera
+>
+> | **Regla**                       | **Fronteras**            |
+> |---------------------------------|--------------------------|
+> | **Longitud mínima**             | 0 <-> 1                  |
+> | **Longitud máxima**             | 5 <-> 6                  |
+> | **Primer carácter**             | dígito <-> letra         |
+> | **Caracter válido -> inválido** | letra/dígito <-> símbolo |
+> | **Dígitos consecutivos**        | 1 dígito <-> 2 dígitos   |
 
 > ### Lista de identificadores inválidos y su versión corregida por IdentifierFixer
 
